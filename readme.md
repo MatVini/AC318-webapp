@@ -1,5 +1,13 @@
-Projeto de AC318 - Web App
+# Potato Clicker
+### Projeto de Web App
 
-Matheus Vinícius Cirino e Silva
+## Descrição
+Jogo incremental feito para a disciplina AC318 em que o jogador clica no objeto principal (uma batata) para ganhar pontos, que podem ser usados para melhorias que darão ainda mais pontos.
 
-Jogo incremental feito em TypeScript e  Phaser
+## Tecnologias utilizadas
+- Typescript
+- Visual Studio Code
+- Angler
+
+## Licença
+[MIT](https://choosealicense.com/licenses/mit/)

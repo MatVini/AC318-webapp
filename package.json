@@ -1,19 +1,19 @@
 {
-	"name": "phaser3-parcel-template",
+	"name": "ac318-webapp",
 	"version": "1.0.0",
-	"description": "A template project for Phaser3 using Parceljs",
+	"description": "Jogo incremental Potato Clicker",
 	"scripts": {
 		"start": "parcel src/index.html -p 8000",
 		"build": "parcel build src/index.html --out-dir dist",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
-	"author": "supertommy",
+	"author": "MatVini",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/ourcade/phaser3-parcel-template.git"
+		"url": "https://github.com/MatVini/AC318-webapp"
 	},
-	"homepage": "https://github.com/ourcade/phaser3-parcel-template",
+	"homepage": "https://github.com/MatVini/AC318-webapp",
 	"devDependencies": {
 		"@babel/core": "^7.12.3",
 		"@babel/plugin-proposal-class-properties": "^7.12.1",
