@@ -1,0 +1,37 @@
+{
+	"name": "ac318-webapp",
+	"version": "1.0.0",
+	"description": "Jogo incremental Potato Clicker",
+	"scripts": {
+		"start": "parcel src/index.html -p 8000",
+		"build": "parcel build src/index.html --out-dir dist",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "MatVini",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/MatVini/AC318-webapp.git"
+	},
+	"homepage": "https://github.com/MatVini/AC318-webapp",
+	"devDependencies": {
+		"@babel/core": "^7.12.3",
+		"@babel/plugin-proposal-class-properties": "^7.12.1",
+		"babel-eslint": "^10.1.0",
+		"eslint": "^6.8.0",
+		"minimist": ">=1.2.2",
+		"parcel-plugin-clean-easy": "^1.0.2",
+		"parcel-plugin-static-files-copy": "^2.5.0",
+		"typescript": "^4.0.5"
+	},
+	"dependencies": {
+		"phaser": "^3.24.1"
+	},
+	"parcelCleanPaths": [
+		"dist"
+	],
+	"staticFiles": {
+		"staticPath": "public",
+		"watcherGlob": "**"
+	}
+}
