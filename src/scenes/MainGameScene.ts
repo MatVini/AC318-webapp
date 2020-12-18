@@ -19,7 +19,7 @@ export default class MainGameScene extends Phaser.Scene
     {
         this.load.image('bg', 'assets/backdrop.png')
         this.load.image('potato', 'assets/potato.png')
-        this.load.image('upgrade', 'assets/bar.png')
+        this.load.image('upgrade', 'assets/bar_up1.png')
     }
 
     create()
@@ -34,7 +34,7 @@ export default class MainGameScene extends Phaser.Scene
         .on('pointerover', () => this.bigPotatoHover() )
         .on('pointerout', () => this.bigPotatoRest() )
 
-        this.upgrade1.setInteractive()
+        this.upgrade1.setInteractive({ useHandCursor:true })
         .on('pointerdown', () => this.raisePoint(1))
         .on('pointerover', () => this.upgradeHover() )
         .on('pointerout', () => this.upgradeRest() )
@@ -56,7 +56,7 @@ export default class MainGameScene extends Phaser.Scene
         }
 
         this.add.text(540, 120, 'Click the\n  Potato', configTextScore)
-        this.scoreText = this.add.text(20,450,'Score: 0', configTextScore)
+        this.scoreText = this.add.text(20,450,`Score: ${this.score}`, configTextScore)
         this.upgrade1Text = this.add.text(75, 65, `Cost: ${this.up1Cost}`, configTextUpgrade)
     }
 
